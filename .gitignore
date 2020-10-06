@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+.idea/
+auction/auction/.mvn/wrapper/maven-wrapper.jar
+auction/auction/.mvn/wrapper/maven-wrapper.properties
+auction/auction/.mvn/wrapper/MavenWrapperDownloader.java
+auction/auction/target/
+auction/auction/HELP.md
