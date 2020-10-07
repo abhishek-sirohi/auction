@@ -11,4 +11,7 @@ import java.util.List;
 public interface AuctionDao extends CrudRepository<AuctionData, Integer> {
 
     List<AuctionData> findAllByAuctionStatus(AuctionStatus status);
+
+    @Override
+    List<AuctionData> findAll();
 }

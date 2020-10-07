@@ -6,6 +6,8 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -41,6 +43,7 @@ public class ItemBid {
     @Column(name ="BID_AMOUNT", nullable = false)
     private BigDecimal bidAmount;
 
+    @Enumerated(EnumType.STRING)
     @Column(name ="BID_STATUS", nullable = false)
     private BidStatus bidStatus;
 

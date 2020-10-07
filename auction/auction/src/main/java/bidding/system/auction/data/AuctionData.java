@@ -6,6 +6,8 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -40,6 +42,7 @@ public class AuctionData {
     @JoinColumn(name = "AUCTION_ITEM_ID", nullable = false)
     private AuctionItem auctionItem;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "AUCTION_STATUS", nullable = false)
     private AuctionStatus auctionStatus;
 
